@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">dtrs</string>
+    <string name="app_name">Learning Resources</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="don_t_have_an_account_sign_in">¿No tienes una cuenta? Registrarse</string>
+    <string name="already_have_an_account_login">¿Ya tienes una cuenta? Iniciar Sesión</string>
+    <string name="signed">Registrarse</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="log_out">Cerrar Sesión</string>
 </resources>
