@@ -1,0 +1,112 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="8dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgResource"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/dark_gray"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/img_resource" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_of_resource"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginBottom="4dp" />
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/go_resource"
+                    android:textSize="14sp"
+                    android:textColor="#2196F3"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginBottom="4dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="12dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/edit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:text="@string/delete"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

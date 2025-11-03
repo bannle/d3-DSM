@@ -8,4 +8,21 @@
     <string name="signed">Registrarse</string>
     <string name="login">Iniciar Sesión</string>
     <string name="log_out">Cerrar Sesión</string>
+    <string name="add_resource">Agregar recurso</string>
+    <string name="resources">Recursos</string>
+    <string name="filter">Filtrar</string>
+    <string name="title">Título</string>
+    <string name="title_of_resource">Título del recurso</string>
+    <string name="descripion">Descripción</string>
+    <string name="description_of_resource">Descripción del recurso</string>
+    <string name="type">Tipo</string>
+    <string name="type_resource">Tipo de recurso</string>
+    <string name="link">Link</string>
+    <string name="url_resource">URL del recurso</string>
+    <string name="url_img">URL de la Imagen</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="img_resource">Imagen del recurso</string>
+    <string name="go_resource">Ir al recurso</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
 </resources>

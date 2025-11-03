@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 private lateinit var etEmail: EditText
 private lateinit var  etPass: EditText
 private lateinit var btnLogin: Button
@@ -29,14 +28,14 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
 
+        btnLogin.setOnClickListener {
+            login()
+        }
+
         tvRedirectSignUp.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             finish()
-
-            btnLogin.setOnClickListener {
-                login()
-            }
         }
     }
 
@@ -56,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
                     this, "Inicio de sesión exitoso",
                     Toast.LENGTH_SHORT
                 ).show()
-                val intent = Intent(this, ResourcesActivity::class.java)
+                val intent = Intent(this, ResourceActivity::class.java)
                 startActivity(intent)
             } else
                 Toast.makeText(this, "No se pudo iniciar sesión", Toast.LENGTH_SHORT).show()
@@ -68,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            val intent = Intent(this, ResourcesActivity::class.java)
+            val intent = Intent(this, ResourceActivity::class.java)
             startActivity(intent)
             finish()
         }

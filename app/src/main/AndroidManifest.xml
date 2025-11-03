@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dtrs">
         <activity
-            android:name=".ResourcesActivity"
+            android:name=".UpdateResourceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddResourceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResourceActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

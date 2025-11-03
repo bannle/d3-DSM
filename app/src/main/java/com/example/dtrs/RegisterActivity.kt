@@ -91,7 +91,7 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, ResourcesActivity::class.java)
+                val intent = Intent(this, ResourceActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
@@ -105,7 +105,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            val intent = Intent(this, ResourcesActivity::class.java)
+            val intent = Intent(this, ResourceActivity::class.java)
             startActivity(intent)
             finish()
         }
